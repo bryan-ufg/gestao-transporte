@@ -34,6 +34,12 @@
   grid-row-start: 2;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
 .main ol {
   font-family: var(--font-geist-mono);
   padding-left: 0;
@@ -54,6 +60,14 @@
   padding: 2px 4px;
   border-radius: 4px;
   font-weight: 600;
+}
+
+.hash {
+  display: flex;
+  justify-content: center;
+  padding-top: clamp(2rem, 10vw, 5rem);
+  gap: 32px;
+  grid-row-start: 2;
 }
 
 .ctas {
