@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="pt-BR">
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
           <header className={styles.header}>
             <h2 className="ctas">{String(metadata.title)}</h2>
