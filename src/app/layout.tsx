@@ -4,7 +4,6 @@ import "./globals.css";
 import styles from "./page.module.css";
 import {
   ClerkProvider,
-  SignIn,
   SignedIn,
   SignedOut,
   UserButton,
@@ -39,9 +38,6 @@ export default function RootLayout({
             <UserButton showName />
           </header>
           <SignedOut>
-            <div className={styles.hash}>
-              <SignIn routing="hash" />
-            </div>
           </SignedOut>
           <SignedIn>
             {children}
