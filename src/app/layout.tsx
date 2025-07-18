@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 import styles from "./page.module.css";
 import {
@@ -34,10 +35,19 @@ export default function RootLayout({
       <html lang="pt-BR">
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
           <header className={styles.header}>
-            <h2 className="ctas">{String(metadata.title)}</h2>
+            <h2 className="ctas">{String(metadata.title) + "🚚"}</h2>
+            <Image
+              className={styles.logo}
+              src="/tabocao.png"
+              alt="Logo Grupo Tabocão"
+              width={180}
+              height={38}
+              priority
+            />
             <UserButton showName />
           </header>
           <SignedOut>
+            <text>Faça login para acessar a aplicação.</text>
           </SignedOut>
           <SignedIn>
             {children}
